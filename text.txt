@@ -1,0 +1,5 @@
+kb_docs = [
+    "To reset your password, click on the 'Forgot Password' link on the login page and follow the instructions sent to your email.",
+    "Our platform supports multi-factor authentication (MFA) for enhanced security.",
+    "You can update your profile information from the settings menu after logging in."
+]
