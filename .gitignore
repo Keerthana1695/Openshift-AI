@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+faiss_index/
+.env
+.vscode/
+*.log
+*.sqlite3
+node_modules/
+dist/
