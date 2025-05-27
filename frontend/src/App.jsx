@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import React from 'react';
+import ChatBox from './components/ChatBox';
 
 function App() {
   const [query, setQuery] = useState('');
   const [answer, setAnswer] = useState('');
+   return <ChatBox />;
 
   const handleAsk = async () => {
     const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/ask`, {
