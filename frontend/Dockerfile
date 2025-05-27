@@ -1,5 +1,11 @@
-FROM python:3.10
+# Stage 1: Build
+FROM node:18 as builder
 WORKDIR /app
 COPY . .
-RUN pip install -r requirements.txt
-CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+RUN npm install && npm run build
+
+# Stage 2: Serve
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80
+
