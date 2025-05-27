@@ -1,0 +1,3 @@
+# Placeholder for vector db if external (FAISS is local so optional)
+# For FAISS local no deployment needed
+# If you want Qdrant/Weaviate, define deployment here
