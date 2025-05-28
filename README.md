@@ -1,13 +1,13 @@
 # RAG-based Knowledge Assistant on Red Hat OpenShift AI
 
-This project demonstrates a Retrieval-Augmented Generation (RAG) pipeline for querying internal documents using OpenShift AI, FAISS, and OpenAI.
+This project demonstrates a Retrieval-Augmented Generation (RAG) pipeline for querying internal documents using OpenShift AI, PostgreSQL+pgvector, and OpenAI.
 
 ## Components
 
 - **Jupyter Notebook** for document ingestion and embedding
-- **FAISS Vector Store** for similarity search
+- **PostgreSQL+pgvector Vector Store** for similarity search
 - **FastAPI Backend** to serve QA endpoint
-- **Streamlit Frontend** as a chatbot interface
+- **React Frontend** as a chatbot interface
 - **Deployed on OpenShift** using containerized microservices
 
 ## Setup Steps
